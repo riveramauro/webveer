@@ -8,7 +8,11 @@ set :stage, :production
 
 # Extended Server Syntax
 # ======================
-server 'example.com', user: 'deploy', roles: %w{web app db}
+server '104.236.247.146', user: 'serverpilot', roles: %w{web app db}
+
+set :deploy_to, -> { "~/apps/webveer" }
+
+set :branch, :master
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options

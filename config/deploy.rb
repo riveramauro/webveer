@@ -1,5 +1,5 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'webveer'
+set :repo_url, 'git@github.com:riveramauro/webveer.git'
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)
@@ -22,7 +22,7 @@ set :keep_releases, 3
 
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
-# set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
+set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
 set :linked_files, fetch(:linked_files, []).push('.env')
 set :linked_dirs, fetch(:linked_dirs, []).push('web/app/uploads')
 
